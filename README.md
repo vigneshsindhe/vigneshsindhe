@@ -1,3 +1,3 @@
-# my_intro.....
-<img width="1742" height="903" alt="ChatGPT Image Aug 3, 2026, 02_19_38 PM" src="https://github.com/user-attachments/assets/4486358b-6f5d-4b17-92d2-d1ecaabf20b3" />
+# MY INTRODUCTION
 
+<img src="https://github.com/user-attachments/assets/4486358b-6f5d-4b17-92d2-d1ecaabf20b3" width="100%" alt="Profile Image" />
