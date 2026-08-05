@@ -38,9 +38,9 @@
 <text x="38" y="74" font-size="10" letter-spacing="3" fill="#475569">VISUAL.MAP</text>
 <rect x="36" y="84" width="400" height="492" rx="10" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.45" filter="url(#glow3)"/>
 <rect x="36" y="84" width="400" height="492" rx="10" fill="#0A101F" stroke="rgba(34,211,238,0.35)"/>
-<g clip-path="url(#profileClip)"
-   transform="translate(-30,0)"
-   opacity="0">
+<g
+clip-path="url(#profileClip)"
+transform="translate(-30,0)">
 
     <animateTransform
         attributeName="transform"
