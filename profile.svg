@@ -16,6 +16,15 @@
 <filter id="glow3" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
 <filter id="txtGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <clipPath id="winClip"><rect x="2" y="2" width="1176" height="606" rx="18"/></clipPath>
+<clipPath id="profileClip">
+    <rect
+        x="45"
+        y="92"
+        width="382"
+        height="476"
+        rx="10"
+        ry="10"/>
+</clipPath>
 </defs>
 <rect x="2" y="2" width="1176" height="606" rx="18" fill="#070B16"/>
 <g clip-path="url(#winClip)">
@@ -29,9 +38,34 @@
 <text x="38" y="74" font-size="10" letter-spacing="3" fill="#475569">VISUAL.MAP</text>
 <rect x="36" y="84" width="400" height="492" rx="10" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.45" filter="url(#glow3)"/>
 <rect x="36" y="84" width="400" height="492" rx="10" fill="#0A101F" stroke="rgba(34,211,238,0.35)"/>
-<g transform="translate(50,86) scale(1.2400,1.4471)" fill="#A78BFA" shape-rendering="crispEdges">
-<set attributeName="opacity" to="0" begin="3.2s"/>
-      
+<g clip-path="url(#profileClip)"
+   transform="translate(-30,0)"
+   opacity="0">
+
+    <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="-30 0"
+        to="0 0"
+        begin="0.4s"
+        dur="0.8s"
+        fill="freeze"/>
+
+    <animate
+        attributeName="opacity"
+        from="0"
+        to="1"
+        begin="0.4s"
+        dur="0.8s"
+        fill="freeze"/>
+
+    <image
+        x="45"
+        y="92"
+        width="382"
+        height="476"
+        preserveAspectRatio="xMidYMid slice"
+        href="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPOSITORY/main/profile.png"/>
 </g>
 <path d="M 50 84 L 36 84 L 36 98" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
 <path d="M 422 84 L 436 84 L 436 98" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.8"/>
