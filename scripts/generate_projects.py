@@ -148,10 +148,17 @@ def main():
             f.write(svg)
         print(f"Generated {OUTPUT_PATH} with {len(repos)} repositories.")
     except Exception as e:
+        import io
         import traceback
 
-        traceback.print_exc()
-        print(f"Error generating projects SVG: {e}", file=sys.stderr)
+        buf = io.StringIO()
+        traceback.print_exc(file=buf)
+        msg = f"Error generating projects SVG: {e}\n{buf.getvalue()}"
+        print(msg, file=sys.stderr)
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_path:
+            with open(summary_path, "a", encoding="utf-8") as sf:
+                sf.write("### Generator error\n```\n" + msg + "\n```\n")
         sys.exit(1)
 
 
