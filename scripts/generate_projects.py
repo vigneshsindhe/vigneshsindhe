@@ -148,6 +148,9 @@ def main():
             f.write(svg)
         print(f"Generated {OUTPUT_PATH} with {len(repos)} repositories.")
     except Exception as e:
+        import traceback
+
+        traceback.print_exc()
         print(f"Error generating projects SVG: {e}", file=sys.stderr)
         sys.exit(1)
 
