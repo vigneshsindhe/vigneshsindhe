@@ -28,20 +28,26 @@ DARK_STAR = "#F8FAFC"
 DARK_CARD = "#111A2E"
 
 
-def fetch_json(url):
+def fetch_json(url, use_token=True):
     req = urllib.request.Request(url)
     req.add_header("User-Agent", "projects-svg-generator")
     req.add_header("Accept", "application/vnd.github+json")
-    if TOKEN:
+    if use_token and TOKEN:
         req.add_header("Authorization", f"Bearer {TOKEN}")
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
 def list_repos():
-    repos = fetch_json(
-        f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100&sort=updated"
+    url = (
+        f"https://api.github.com/users/{GITHUB_USER}/repos"
+        "?per_page=100&sort=updated"
     )
+    try:
+        repos = fetch_json(url, use_token=True)
+    except Exception:
+        # GITHUB_TOKEN may be restricted/invalid; public data works without auth
+        repos = fetch_json(url, use_token=False)
     filtered = [
         r
         for r in repos
