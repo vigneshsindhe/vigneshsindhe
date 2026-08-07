@@ -46,7 +46,7 @@
 <br/>
 <br/>
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/vigneshsindhe/vigneshsindhe/projects/projects.svg" alt="Projects" />
+<img width="100%" src="https://raw.githubusercontent.com/vigneshsindhe/vigneshsindhe/output/projects/projects.svg" alt="Projects" />
 </div>
 
 <!-- ===== SOCIAL BADGES ===== -->
