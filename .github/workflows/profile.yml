@@ -1,9 +1,9 @@
-name: Generate Projects Card
+name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 6 * * 0"   # weekly, Sunday 6am UTC
-  workflow_dispatch:      # allow manual run
+    - cron: "0 * * * *"
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,12 +22,20 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Generate contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: vigneshsindhe
+          outputs: |
+            dist/snake-dark.svg?color_snake=green&color_dots=%230891B2,%23A78BFA,%2322D3EE,%2310B981,%230891B2,%23A78BFA,%2322D3EE
+            dist/snake-light.svg?color_snake=green&color_dots=%230891B2,%23A78BFA,%2322D3EE,%2310B981,%230891B2,%23A78BFA,%2322D3EE
+
       - name: Generate projects.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: vigneshsindhe
-          EXCLUDE_FORKS: "true"
-          MAX_REPOS: "8"
+          EXCLUDE_FORKS: "false"
+          MAX_REPOS: "20"
           OUTPUT_PATH: dist/projects.svg
         run: python scripts/generate_projects.py
 
