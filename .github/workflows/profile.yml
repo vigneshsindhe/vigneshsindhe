@@ -36,10 +36,11 @@ jobs:
           GITHUB_USER: vigneshsindhe
           EXCLUDE_FORKS: "false"
           MAX_REPOS: "20"
-          OUTPUT_PATH: dist/projects.svg
-        run: |
-          mkdir -p dist
-          python scripts/generate_projects.py
+          OUTPUT_PATH: projects/projects.svg
+        run: python scripts/generate_projects.py
+
+      - name: Copy projects.svg to dist
+        run: cp projects/projects.svg dist/projects.svg
 
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v3
