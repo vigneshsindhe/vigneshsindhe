@@ -37,7 +37,9 @@ jobs:
           EXCLUDE_FORKS: "false"
           MAX_REPOS: "20"
           OUTPUT_PATH: dist/projects.svg
-        run: python scripts/generate_projects.py
+        run: |
+          mkdir -p dist
+          python scripts/generate_projects.py
 
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v3
