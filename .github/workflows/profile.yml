@@ -46,14 +46,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Generate projects.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USER: vigneshsindhe
-          EXCLUDE_FORKS: "false"
-          MAX_REPOS: "20"
-          OUTPUT_PATH: dist/projects.svg
-        run: python scripts/generate_projects.py   
