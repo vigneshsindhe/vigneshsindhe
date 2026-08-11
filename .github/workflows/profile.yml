@@ -30,6 +30,13 @@ jobs:
             dist/snake-dark.svg?color_snake=green&color_dots=%230891B2,%23A78BFA,%2322D3EE,%2310B981,%230891B2,%23A78BFA,%2322D3EE
             dist/snake-light.svg?color_snake=green&color_dots=%230891B2,%23A78BFA,%2322D3EE,%2310B981,%230891B2,%23A78BFA,%2322D3EE
 
+      - name: Fix dist permissions
+        run: |
+          if [ -d dist ]; then
+            sudo chown -R $(id -u):$(id -g) dist || true
+            sudo chmod -R u+rw dist || true
+          fi
+
       - name: Generate projects.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
