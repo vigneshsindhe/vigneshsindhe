@@ -76,18 +76,20 @@
 
 <div align="center">
 
-<a href="https://github.com/vigneshsindhe/leetcode">
-  <img
-    src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=leetcode&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
-    width="49%"
-    alt="LeetCode Contributions"
-  />
-</a>
 <a href="https://github.com/vigneshsindhe/reference">
   <img
     src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=reference&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
     width="49%"
     alt="Developer Reference Cheat Sheet"
+  />
+</a>
+
+<!--  leetcode and Kunal Java card disabled
+<a href="https://github.com/vigneshsindhe/leetcode">
+  <img
+    src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=leetcode&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    width="49%"
+    alt="LeetCode Contributions"
   />
 </a>
 
@@ -100,7 +102,7 @@
     alt="Kunal YT Java learning"
   />
 </a>
-
+-->
 </div>
 
 
