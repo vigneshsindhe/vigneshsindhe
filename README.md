@@ -71,26 +71,38 @@
 
 <!-- ===== STARRED REPOSITORIES ===== -->
 
+
 <h2 align="center">Starred Repositories</h2>
 
 <div align="center">
 
 <a href="https://github.com/vigneshsindhe/leetcode">
   <img
-    src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/pin/?username=vigneshsindhe&repo=REPO_ONE&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=leetcode&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
     width="49%"
-    alt="Leetcode Contributions"
+    alt="LeetCode Contributions"
   />
 </a>
 <a href="https://github.com/vigneshsindhe/reference">
   <img
-    src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/pin/?username=vigneshsindhe&repo=REPO_TWO&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=reference&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
     width="49%"
-    alt="quick reference cheat sheet for developers."
+    alt="Developer Reference Cheat Sheet"
+  />
+</a>
+
+<br/>
+
+<a href="https://github.com/vigneshsindhe/kunal_yt_java">
+  <img
+    src="https://github-readme-stats.vercel.app/api/pin/?username=vigneshsindhe&repo=kunal_yt_jaava&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    width="49%"
+    alt="Kunal YT Java learning"
   />
 </a>
 
 </div>
+
 
 <!-- ===== END STARRED REPOSITORIES ===== -->
 
