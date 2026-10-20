@@ -67,12 +67,33 @@
 
 </div>
 
-<!-- ===== END SNAKE ===== -->
-<br/>
-<br/>
+<!-- ===== SNAKE END ===== -->
+
+<!-- ===== STARRED REPOSITORIES ===== -->
+
+<h2 align="center">Starred Repositories</h2>
+
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/vigneshsindhe/vigneshsindhe/output/projects.svg" alt="Projects" />
+
+<a href="https://github.com/vigneshsindhe/leetcode">
+  <img
+    src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/pin/?username=vigneshsindhe&repo=REPO_ONE&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    width="49%"
+    alt="Leetcode Contributions"
+  />
+</a>
+<a href="https://github.com/vigneshsindhe/reference">
+  <img
+    src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/pin/?username=vigneshsindhe&repo=REPO_TWO&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F"
+    width="49%"
+    alt="quick reference cheat sheet for developers."
+  />
+</a>
+
 </div>
+
+<!-- ===== END STARRED REPOSITORIES ===== -->
+
 
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
