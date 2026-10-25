@@ -54,6 +54,7 @@ jobs:
         run: cp projects/projects.svg dist/projects.svg
 
       - name: Deploy to output branch
+        id: deploy
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
