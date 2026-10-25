@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -50,6 +54,16 @@ jobs:
         run: cp projects/projects.svg dist/projects.svg
 
       - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Retry deployment after a transient push failure
+        if: steps.deploy.outcome == 'failure'
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
