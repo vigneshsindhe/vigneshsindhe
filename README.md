@@ -1,4 +1,4 @@
-<!-- ===== THEME-AWARE HERO BANNER ===== -->
+<!-- ===== THEME--- HERO BANNER ===== -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vigneshsindhe/vigneshsindhe/main/profile.svg">
